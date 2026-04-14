@@ -1,0 +1,50 @@
+body{
+    background-color: lightgrey;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 1000;
+}
+
+    h3{
+
+    text-align: center;
+    font-size: 20px;
+    }
+.box{
+   
+    width: 150px;
+    height: 150px;
+    border: 5px solid black;
+    border-radius: 30px;
+    text-align: center;
+    margin: 5px;
+ 
+
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.red{
+    background-color: red;
+}
+.yellow{
+    background-color: yellow;
+}
+.green{
+    background-color: green;
+}
+.blue{
+    background-color: blue;
+}
+.flash{
+    background-color: white;
+}
+
+.userflash {
+    background-color: white;
+}

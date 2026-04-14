@@ -1,0 +1,218 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+  background: #f8f8f8;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 12px 0;
+  z-index: 10;
+  text-align: center;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: color 0.2s;
+}
+
+.navbar a:hover {
+  color: #FFD700;
+}
+
+/* Parallax Sections */
+.parallax {
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-shadow: 0 2px 8px #000;
+}
+
+.parallax-1 {
+  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80');
+}
+
+.parallax-2 {
+  background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1500&q=80');
+  min-height: 60vh;
+}
+
+.parallax-3 {
+  background-image: url('https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1500&q=80');
+}
+
+.parallax-4 {
+  background-image: url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1500&q=80');
+}
+
+/* Content Sections */
+.section {
+  padding: 80px 20px;
+  background: transparent;
+  color: #333;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin: 100px 0;
+}
+
+.section h2 {
+  margin-bottom: 24px;
+  font-size: 2.2em;
+  color: #0077b6;
+}
+
+/* Destination Cards */
+.destination-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.destination-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.09);
+  width: 260px;
+  overflow: hidden;
+  text-align: left;
+  transition: transform 0.2s;
+   border: 2px solid #FFD700;
+}
+
+.destination-card:hover {
+  transform: translateY(-8px) scale(1.03);
+}
+
+.destination-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.destination-card .info {
+  padding: 16px;
+}
+
+/* Adventure Cards */
+.adventure-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.adventure-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.09);
+  width: 260px;
+  overflow: hidden;
+  text-align: left;
+  transition: transform 0.2s;
+  border: 2px solid #FFD700;
+}
+
+.adventure-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
+}
+
+.adventure-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.adventure-card .info {
+  padding: 16px;
+}
+
+.adventures-section h2 {
+  color: #FF6B35;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  margin-top: 18px;
+  background: #0077b6;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #023e8a;
+}
+
+/* Footer */
+.site-footer {
+  background: #222;
+  color: #fff;
+  padding: 38px 0 18px 0;
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.footer-left h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+.footer-left p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #bbb;
+}
+
+
+/* Responsive Design */
+@media only screen and (max-width: 900px) {
+  .destination-grid,
+  .adventure-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .parallax {
+    background-attachment: scroll;
+    min-height: 50vh;
+  }
+
+  .parallax-2 {
+    min-height: 40vh;
+  }
+}

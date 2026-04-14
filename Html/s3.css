@@ -1,0 +1,37 @@
+
+#navbar {
+    background-color: #232f3e;
+    height: 60px;
+}
+
+button {
+    background-color: #f08804;
+}
+
+a {
+    margin-right: 200px;
+    text-decoration: none;
+}
+
+#logo {
+    color: #f08804;
+    font-size: 25px;
+    margin-left: 200px;
+}
+.box1{
+
+    height: 100px;
+    width: 100px;
+    border: 2px solid black; 
+    display: inline-block;
+}
+
+
+    
+
+footer{
+    background-color: #232f3e;
+    text-align: center;
+    height: 60px;
+
+}
