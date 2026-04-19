@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Post</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="/posts" class="back-link">← Back to Posts</a>
+        
+        <div class="post-card">
+            <div class="post-meta">
+                <span class="username">@<%= post.username %></span>
+                <span class="post-id">ID: <%= post.id.substring(0,8) %>...</span>
+            </div>
+            <div class="post-content">
+                <%= post.comment %>
+            </div>
+            <div class="post-actions">
+                <a href="/posts/<%= post.id %>/edit" class="btn btn-primary">Edit Post</a>
+                <form action="/posts/<%= post.id %>/delete" method="POST" style="display: inline;">
+                    <button type="submit" class="btn btn-danger">Delete Post</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

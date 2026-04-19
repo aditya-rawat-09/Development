@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Post</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="/posts" class="back-link">← Back to Posts</a>
+        <h1>Add a New Post</h1>
+        
+        <form action="/posts" method="post">
+            <div class="form-group">
+                <input type="text" name="username" placeholder="Enter username" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+                <textarea name="comment" placeholder="What's on your mind?" class="form-control" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Post</button>
+        </form>
+    </div>
+</body>
+</html>
