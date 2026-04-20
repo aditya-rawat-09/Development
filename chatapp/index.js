@@ -53,7 +53,18 @@ app.post('/chats', async (req, res) => {
 app.get('/chats/:id/edit', async (req, res) => {
     const { id } = req.params;
     const chat = await Chat.findById(id);
+    if (!chat) {
+        // Handle case where chat is not found
+        next( new expressError(404,"Chat not found"));
+    }
     res.render('edit', { chat });
+});
+
+
+//  async error handling middleware
+app.use((err,req,res,next)=>{
+    let {status=500,message="something went wrong"}=err;
+    res.status(status).send(message);
 });
 
 app.post('/chats/:id/edit', async (req, res) => {
